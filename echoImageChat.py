@@ -1,19 +1,3 @@
-"""
-This script, echoImageChat, is a Streamlit app. Users can input text, image and even directly talk 
-with the underlying Google Gemini. Based on the RealtimeTTS (https://github.com/KoljaB/RealtimeTTS),
-the speech can be converted into text and sent to Gemini as text prompt.
-
-To run this script, install the package firstly.
-$ pip install streamlit
-$ pip install google-generativeai
-$ pip install RealtimeSTT
-
-After the installation, run the command to launch the app.
-Don't forget creating the GOOGLE_API_KEY in a local .env file.
-$ streamlit run echoImageChat.py
-
-"""
-
 # loads genai API Key from .env file
 from dotenv import load_dotenv, find_dotenv
 import google.generativeai as genai  # Gemini API key
